@@ -1,3 +1,9 @@
+html {
+    --color-accent: oklch(65% 50% 0);
+    --color-accent-bg: oklch(65% 50% 0/.3);
+    accent-color: var(--color-accent-bg);
+}
+
 body {
   /* Set line height to 1.5 times the font size
 	   and use the OS’s UI font as the website font
@@ -7,3 +13,31 @@ body {
   margin: 0 auto;
   padding: 1rem;
 }
+  nav a.current {
+    font-weight: bold;
+    text-decoration: none;
+    color: darkblue;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: oklch(80% 3% 200);
+  }
+  nav a {
+    flex: 1;
+    color: inherit;
+    text-align: center;
+    padding: .5em;
+  }
+  nav a:hover {
+    background-color: var(--color-accent-bg);
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-accent);
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: oklch(80% 3% 200);
+  }
