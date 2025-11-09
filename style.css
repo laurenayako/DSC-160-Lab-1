@@ -13,6 +13,13 @@ body {
   margin: 0 auto;
   padding: 1rem;
 }
+h1 {
+    font: 300%/1.2 system-ui;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap:balance;
+}
   nav a.current {
     font-weight: bold;
     text-decoration: none;
@@ -56,12 +63,13 @@ body {
     grid-column: 1/-1;
   }
 
-    /*
-    input, textarea, button {
-        font: inherit;
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-        margin-block: 1rem;
+  .projects {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    article {
+        display: grid;
+        grid-template-rows: subgrid;
+        grid-row: span 3;
     }
-        */
+  }
