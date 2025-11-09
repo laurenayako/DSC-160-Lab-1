@@ -1,2 +1,2 @@
 # DSC-160-Lab-1
-Portfolio: for DSTl
+Portfolio: for DSTL
